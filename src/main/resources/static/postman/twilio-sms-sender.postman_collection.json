@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "5002d233-082a-403c-9e61-4aa7afd7b712",
+		"name": "twilio-sms-sender",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send SMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phoneNumber\": \"string\",\n    \"message\": \"Hi this is a test message from RM Dev\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sms"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
